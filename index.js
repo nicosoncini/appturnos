@@ -75,6 +75,11 @@ app.get('/usuario', async (req, res) => {
 });
 
 
+app.get('/', async (req, res) => {
+    res.send('vamossss')
+});
+
+
 app.put('/edit-usuario/:id', async (req, res) =>{
     const {nombre, apellido}= req.body;
     await Usuario.findByIdAndUpdate(req.params.id, {nombre, apellido});
