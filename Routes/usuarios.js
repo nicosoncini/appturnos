@@ -39,7 +39,7 @@ var fileField = document.querySelector("Content-Type='application/json']");
 
 formData.append('nombre', 'apellido');
 
-fetch('https://tunosapp.herokuapp.com/crea-usuario', {
+return fetch('https://tunosapp.herokuapp.com/crea-usuario', {
   method: 'POST',
   body: formData
 })
