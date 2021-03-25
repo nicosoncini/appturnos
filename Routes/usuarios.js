@@ -36,7 +36,7 @@ var fileField = document.querySelector("input[type='file']");
 
 formData.append('nombre', 'apellido');
 
-fetch('https://tunosapp.herokuapp.com/usuario', {
+fetch('https://tunosapp.herokuapp.com/crea-usuario', {
   method: 'POST',
   body: formData
 })
