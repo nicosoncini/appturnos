@@ -32,7 +32,7 @@ app.delete('/delete-usuario/:id', async (req, res) =>{
 });
 
 
-fetch('https://tunosapp.herokuapp.com/crea-usuario', {
+fetch('/crea-usuario', {
   method: 'POST',
   body: JSON.stringify({
     "nombre": "Hola",
