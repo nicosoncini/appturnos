@@ -36,7 +36,7 @@ var formData = {
     "apellido": "Chau"
 };
 
-return fetch('https://tunosapp.herokuapp.com/crea-usuario', {
+fetch('https://tunosapp.herokuapp.com/crea-usuario', {
   method: 'POST',
   body: formData,
   headers: {
