@@ -32,7 +32,7 @@ app.delete('/delete-usuario/:id', async (req, res) =>{
 });
 
 
-return fetch('/crea-usuario', {
+fetch('/creanuevo-usuario', {
   method: 'POST',
   body: JSON.stringify({
     nombre: "Hola",
@@ -41,10 +41,8 @@ return fetch('/crea-usuario', {
   headers: {
       'Content-Type' : 'application/json'
     },
+}).then(res => {
+    return res.json()
 })
-.then(function(response)    {
-       return response.json()
-})
-.then(function(data) {
-    console.log('hola que onda', data)
-})
+    .then(data => console.log(data))
+    .catch(error => console.log('ERROR'))
