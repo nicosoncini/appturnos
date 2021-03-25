@@ -1,4 +1,4 @@
-app.post('/usuario', async (req,res) =>{
+app.post('/crea-usuario', async (req,res) =>{
     res.send('usuario creado');
     let usuario = await new Usuario();
     usuario.nombre = req.body.nombre;
@@ -42,7 +42,3 @@ fetch('https://tunosapp.herokuapp.com/crea-usuario', {
       'Content-Type' : 'application/json'
     },
 })
-.then(new Usuario());
-    usuario.nombre = req.body.nombre;
-    usuario.apellido = req.body.apellido;
-    usuario.save();
