@@ -43,6 +43,7 @@ fetch('https://tunosapp.herokuapp.com/crea-usuario', {
       'Content-Type' : 'application/json'
     },
 })
-.then(response => response.json())
-.catch(error => console.error('Error:', error))
-.then(response => console.log('Success:', response));
+.then(new Usuario());
+    usuario.nombre = req.body.nombre;
+    usuario.apellido = req.body.apellido;
+    usuario.save();
