@@ -35,13 +35,13 @@ app.delete('/delete-usuario/:id', async (req, res) =>{
 await fetch('/crea-usuario', {
   method: 'POST',
   body: JSON.stringify({
-    "nombre": "Hola",
-    "apellido": "Chau"
+    nombre: 'Hola',
+    apellido: 'Chau'
 }),
   headers: {
       'Content-Type' : 'application/json'
     },
 })
-.then(response => {
+.then(() => {
     console.log('hola')
 })
