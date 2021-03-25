@@ -35,13 +35,13 @@ var formData = {
     "nombre": "Hola",
     "apellido": "Chau"
 };
-var fileField = document.querySelector("Content-Type='application/json']");
-
-formData.append('nombre', 'apellido');
 
 return fetch('https://tunosapp.herokuapp.com/crea-usuario', {
   method: 'POST',
-  body: formData
+  body: formData,
+  headers: {
+      'Content-Type' : 'application/json'
+    },
 })
 .then(response => response.json())
 .catch(error => console.error('Error:', error))
