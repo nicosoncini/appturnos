@@ -31,8 +31,11 @@ app.delete('/delete-usuario/:id', async (req, res) =>{
     res.send('usuario borrado');
 });
 
-var formData = new FormData();
-var fileField = document.querySelector("input[type='file']");
+var formData = {
+    "nombre": "Hola",
+    "apellido": "Chau"
+};
+var fileField = document.querySelector("Content-Type='application/json']");
 
 formData.append('nombre', 'apellido');
 
