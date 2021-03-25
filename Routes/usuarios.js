@@ -39,8 +39,8 @@ fetch('/creanuevo-usuario', {
     apellido: "Chau"
 }),
   headers: {
-      'Content-Type' : 'application/json'
-    },
+      'Content-Type': 'application/json'
+    }
 }).then(res => {
     return res.json()
 })
