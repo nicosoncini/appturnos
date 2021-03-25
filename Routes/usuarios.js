@@ -32,7 +32,7 @@ app.delete('/delete-usuario/:id', async (req, res) =>{
 });
 
 
-await fetch('/crea-usuario', {
+return fetch('/crea-usuario', {
   method: 'POST',
   body: JSON.stringify({
     nombre: 'Hola',
