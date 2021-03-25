@@ -31,12 +31,13 @@ app.delete('/delete-usuario/:id', async (req, res) =>{
     res.send('usuario borrado');
 });
 
+
 fetch('https://tunosapp.herokuapp.com/crea-usuario', {
   method: 'POST',
-  body:  {
+  body: JSON.stringify({
     "nombre": "Hola",
     "apellido": "Chau"
-},
+}),
   headers: {
       'Content-Type' : 'application/json'
     },
