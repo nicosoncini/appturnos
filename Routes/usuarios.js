@@ -42,3 +42,6 @@ fetch('/crea-usuario', {
       'Content-Type' : 'application/json'
     },
 })
+.then(response => {
+    console.log('hola')
+})
