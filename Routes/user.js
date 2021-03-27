@@ -14,4 +14,4 @@ api.post('/', createUser)
 api.put('/:id', updateUser)
 api.delete('/:id', deleteUser)
 
-module.exports = userRoutes
+module.exports = api
