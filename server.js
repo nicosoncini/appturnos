@@ -3,14 +3,7 @@ const express = require ('express');
 const server = express();
 const dbConnect = require('./database')
 
-dbConnect()
-
-
-
-
-
 server.use(express.json());
-
 
 //Rutas
 const userRoutes = require('./routes/user')

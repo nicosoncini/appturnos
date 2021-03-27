@@ -10,4 +10,4 @@ mongoose.connect('mongodb+srv://nico:A77aques@cluster0.1e5a1.mongodb.net/App?ret
     .catch(err => console.error('err'));
 
 
-module.exports = db
+module.exports = mongoose
