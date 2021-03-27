@@ -8,3 +8,6 @@ mongoose.connect('mongodb+srv://nico:A77aques@cluster0.1e5a1.mongodb.net/App?ret
 })
     .then(db => console.log('DB conectada'))
     .catch(err => console.error('err'));
+
+
+module.exports = db
