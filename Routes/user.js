@@ -7,11 +7,11 @@ const{
     deleteUser,
 } = require('../controllers/user')
 
-const api = Router()
+const apiUser = Router()
 
-api.get('/', getUser)
-api.post('/', createUser)
-api.put('/:id', updateUser)
-api.delete('/:id', deleteUser)
+apiUser.get('/', getUser)
+apiUser.post('/', createUser)
+apiUser.put('/:id', updateUser)
+apiUser.delete('/:id', deleteUser)
 
-module.exports = api
+module.exports = apiUser
