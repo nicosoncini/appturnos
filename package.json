@@ -11,6 +11,9 @@
   "description": "",
   "dependencies": {
     "express": "^4.17.1",
-    "mongoose": "^5.12.1"
+    "mongoose": "^5.12.1",
+    "node-fetch": "^2.6.1",
+    "r2": "^2.0.1",
+    "throttled-queue": "^1.0.7"
   }
 }

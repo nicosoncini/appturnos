@@ -1,12 +1,13 @@
 const mongoose = require('mongoose');
 const Schema = mongoose.Schema;
 
-const userSchema = new Schema({
+const clientSchema = new Schema({
     nombre: String,
     apellido: String,
 })
 
 //Modelo REVISAR
-const User = mongoose.model('User', userSchema,'User');
+const Client = mongoose.model('Client', clientSchema,'Client');
 
-module.exports = User
+module.exports = Client
+
