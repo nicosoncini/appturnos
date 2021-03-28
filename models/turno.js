@@ -3,8 +3,8 @@ const Schema = mongoose.Schema;
 
 const turnoSchema = new Schema({
     fecha: Date,
-    usuario: String,
-    cliente: String,
+    usuario: Schema.Types.ObjectId,
+    cliente: Schema.Types.ObjectId,
 })
 
 //Modelo
