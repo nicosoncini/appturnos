@@ -1,7 +1,7 @@
 const User = require('../models/user');
 const fetch = require('node-fetch');
 
-/*const getUser = async (req, res) => {
+const getUser = async (req, res) => {
     try{
         const users = await User.find();
         res.send(users)}
@@ -9,22 +9,6 @@ const fetch = require('node-fetch');
             console.log(error);
         }
 }
-*/
-
-const throttledQueue = require('throttled-queue');
-let throttle = throttledQueue(15, 1000);
-
-const getUser = async (req, res) => {
-    try{
-        const users = await fetch("http://localhost:3000/user");
-        const json = await users.json();
-        console.log(json);
-        }catch (error) {
-            console.log (error)
-        }
-};
-
-getUser("http://localhost:3000/user");
 
 
 const createUser = async (req, res) => {
