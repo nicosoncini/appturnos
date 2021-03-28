@@ -1,7 +1,7 @@
 //Inicialización
 const express = require ('express');
 const server = express();
-//const dbConnect = require('./database')
+const dbConnect = require('./database')
 
 server.use(express.json());
 
