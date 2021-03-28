@@ -14,6 +14,4 @@ server.use('/user', userRoutes)
 server.use('/client', clientRoutes)
 server.use('/turno', turnoRoutes)
 
-  
 module.exports = server
-

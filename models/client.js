@@ -10,4 +10,3 @@ const clientSchema = new Schema({
 const Client = mongoose.model('Client', clientSchema,'Client');
 
 module.exports = Client
-
