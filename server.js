@@ -6,12 +6,12 @@ const dbConnect = require('./database')
 server.use(express.json());
 
 //Rutas
-const apiUser = require('./routes/user')
-const apiClient = require ('./routes/client')
-const apiTurno = require('./routes/turno')
+const userRoutes = require('./routes/user')
+const clientRoutes = require ('./routes/client')
+const turnoRoutes = require('./routes/turno')
 
-server.use('/user', apiUser)
-server.use('/client', apiClient)
-server.use('/turno', apiTurno)
+server.use('/user', userRoutes)
+server.use('/client', clientRoutes)
+server.use('/turno', turnoRoutes)
 
 module.exports = server

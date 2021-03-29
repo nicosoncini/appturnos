@@ -7,11 +7,11 @@ const{
     deleteClient,
 } = require('../controllers/client')
 
-const apiClient = Router()
+const api = Router()
 
-apiClient.get('/', getClient)
-apiClient.post('/', createClient)
-apiClient.put('/:id', updateClient)
-apiClient.delete('/:id', deleteClient)
+api.get('/', getClient)
+api.post('/', createClient)
+api.put('/:id', updateClient)
+api.delete('/:id', deleteClient)
 
-module.exports = apiClient
+module.exports = api

@@ -7,11 +7,11 @@ const{
     deleteTurno,
 } = require('../controllers/turno')
 
-const apiTurno = Router()
+const api = Router()
 
-apiTurno.get('/', getTurno)
-apiTurno.post('/:id', createTurno)
-apiTurno.put('/:id', updateTurno)
-apiTurno.delete('/:id', deleteTurno)
+api.get('/', getTurno)
+api.post('/:id', createTurno)
+api.put('/:id', updateTurno)
+api.delete('/:id', deleteTurno)
 
-module.exports = apiTurno
+module.exports = api
