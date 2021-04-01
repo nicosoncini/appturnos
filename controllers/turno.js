@@ -5,8 +5,8 @@ const getTurno = async (req, res) => {
         const turnos = await Turno.find();
         res.send(turnos)
         }
-        catch(error) {
-            console.log(error);
+        catch(errors) {
+            console.log(errors);
                     }
 }
 
